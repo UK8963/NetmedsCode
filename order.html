@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        margin: 30px;
+        padding: 30px;
+        height: 600px;
+        /* border: 1px solid red; */
+
+        /* background-image: url("https://th.bing.com/th/id/OIP.54aDRJHlX7jC15ANjLWg-QHaEo?w=308&h=192&c=7&r=0&o=5&dpr=1.25&pid=1.7"); */
+      }
+      form {
+        margin: auto;
+        margin-top: 90px;
+        border-radius: 20px;
+        text-align: center;
+        width: 400px;
+        height: 500px;
+        box-shadow: rgba(1, 2, 2, 4) 0px 2px 4px;
+        background-image: url("https://entrackr.com/wp-content/uploads/2020/08/netmeds.jpg");
+        padding-right: 100ch;
+    }
+
+      input {
+        margin: 20px;
+        /* border: 1px solid red; */
+        height: 50px;
+        width: 300px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 25px;
+        margin-left: 60ch;
+      }
+      #btn {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 90%;
+        height: 40px;
+        margin-left: 40ch;
+        background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+        font-size: 15px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+        font-weight: 600;
+        color: whitesmoke;
+        vertical-align: bottom;
+        cursor: pointer;
+        /* transition: all 0.3s; */
+       margin-left: 40ch;
+      }
+      /* #btn:hover {
+        background-color: rgb(8, 102, 105);
+        font-size: 17px;
+        
+      } */
+
+      h1 {
+        margin-left: 60px;
+        font-family: cursive;
+        margin-top: 90px;
+        /* border:1px solid red */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <form>
+        <input type="text" value="" placeholder="Enter your username" />
+        <br />
+        <input type="text" value="" placeholder="Enter your address" />
+        <br />
+        <input type="email" value="" placeholder="Enter your email" />
+        <br />
+        <input type="number" value="" placeholder="Enter your number " />
+        <br />
+        <input type="submit" id="btn" value="Confirm Order" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", submitinfo);
+
+  function submitinfo(event) {
+    event.preventDefault();
+    alert("Your Order has been Successfully Confirmed.");
+    window.location.href = "home.html";
+  }
+</script>
